@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wfa-league/static/css/main.a7a2152b.css",
-    "main.js": "/wfa-league/static/js/main.a296af99.js",
+    "main.css": "/wfa-league/static/css/main.0b706a0e.css",
+    "main.js": "/wfa-league/static/js/main.82f0d733.js",
     "index.html": "/wfa-league/index.html",
-    "main.a7a2152b.css.map": "/wfa-league/static/css/main.a7a2152b.css.map",
-    "main.a296af99.js.map": "/wfa-league/static/js/main.a296af99.js.map"
+    "main.0b706a0e.css.map": "/wfa-league/static/css/main.0b706a0e.css.map",
+    "main.82f0d733.js.map": "/wfa-league/static/js/main.82f0d733.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7a2152b.css",
-    "static/js/main.a296af99.js"
+    "static/css/main.0b706a0e.css",
+    "static/js/main.82f0d733.js"
   ]
 }
