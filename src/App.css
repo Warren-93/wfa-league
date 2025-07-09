@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.App{
+  background: linear-gradient(to bottom right, #032372, #010225);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, App {
+  height: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+#App { /* This might be .App or another ID/class depending on your structure */
+  display: flexbox;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh; /* Viewport height */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.container{
+  display: flexbox;
+  column-gap: 8px;
+}
+header {
+  background-color: #343a40;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.nav-link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+  color: #ffc107;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  margin-bottom: 10px
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* App.css */
+.hero-section {
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.fixtures-section{
+  color: white;
+}
+.news-section{
+  color: rgb(246, 246, 246);
+  
+}
+
+.card {
+  color: black;
+}
+
+.news-section .card {
+  transition: transform 2.5s;
+  width: 400px;
+  
+}
+
+.news-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.fixture{
+  background-color: #010225;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.latest-news{
+  background: inherit;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  margin: 2px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
