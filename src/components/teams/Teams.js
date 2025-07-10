@@ -14,13 +14,15 @@ const Teams = () => {
           throw new Error('Failed to fetch teams');
         }
         const teamsData = await response.json();
-        console.log(teamsData);
+        
+        console.log(teamsData.players);
         setTeams(teamsData);
       } catch (error) {
         console.error('Error fetching teams:', error);
       } finally {
         setLoading(false);  // Hide spinner once data is fetched
       }
+
     };
 
     fetchTeams();
