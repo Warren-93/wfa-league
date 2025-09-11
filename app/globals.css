@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { @apply bg-gray-50 text-gray-900; }
+.card { @apply bg-white rounded-2xl shadow-card p-4; }
+.container { @apply max-w-5xl mx-auto px-4; }
+
+/* === Pitch background overlay on every page === */
+body.has-pitch-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(70% 60% at 50% 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.35) 100%),
+    url("/bg/pitch.svg") center / cover no-repeat;
+  opacity: 0.4;            /* ~40% transparency */
+  pointer-events: none;    /* don't block clicks */
+  z-index: 0;              /* stays behind content */
+}
+.main-content { position: relative; z-index: 10; }
