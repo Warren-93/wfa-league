@@ -1,6 +1,7 @@
 "use client";
-import { useLiveMatch } from "../../../hooks/useLiveMatch";
-import { getFixtures } from "../../../lib/api/services/fixtures";
+import useLiveMatch from '@/hooks/useLiveMatch';   // if it’s in /app/hooks/useLiveMatch.js
+import fixtures from '@/lib/services/fixtures';             // if it’s in /app/lib/fixtures.js
+
 
 export default function MatchCentre({ params }) {
   const fixtureId = params.fixtureId;

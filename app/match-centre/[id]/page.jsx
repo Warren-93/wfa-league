@@ -1,7 +1,7 @@
 "use client";
 import { useMemo } from "react";
-import { getFixtures } from "../../../lib/api/services/fixtures";
-import { useLiveMatch } from "../../../hooks/useLiveMatch";
+import { getFixtures } from "../../lib/api/services/fixtures";
+import { useLiveMatch } from "../../hooks/useLiveMatch";
 
 export default function MatchCentre({ params }) {
   const fixtures = getFixtures();
