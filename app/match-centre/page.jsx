@@ -3,7 +3,7 @@
 import useLiveMatch from "@/hooks/useLiveMatch";
 import { getFixtures } from "@/lib/api/services/fixtures";
 
-export default function MatchCentre({ params }) {
+export default async function MatchCentre({ params }) {
   const fixtureId = params.id; // ✅ param name is [id].jsx, so use params.id
   const fixtures = getFixtures();
   const match = fixtures.find((f) => f.id === fixtureId);

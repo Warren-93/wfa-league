@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { simulateMatch } from "../lib/match/simulateMatch";
 
-export function useLiveMatch(match) {
+export default async function useLiveMatch(match) {
   const [events, setEvents] = useState([]);
   const [score, setScore] = useState({ home: 0, away: 0 });
 
