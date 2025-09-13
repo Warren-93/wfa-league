@@ -1,7 +1,7 @@
-import { getFixtures } from "../../lib/api/services/fixtures";
+import { getFixtures } from "@/lib/api/services/fixtures";
 import Link from "next/link";
 
-export default function FixturesPage() {
+export default function Fixtures() {
   const fixtures = getFixtures();
 
   return (
