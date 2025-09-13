@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
     setToken(null);
   }
 
-  const isAdmin = user?.role === "admin" || user?.role === "league-admin";
+  const isAdmin = user?.role === "team-admin" || user?.role === "league-admin";
 
   return (
     <AuthContext.Provider

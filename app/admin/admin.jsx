@@ -34,7 +34,6 @@ export default function AdminActions() {
 
   async function onAddPlayer() {
     try {
-      // Example only — wire a real form for name/position/teamId
       await addPlayer({ name: "Demo Player", position: "Midfielder", teamId: "TEAM123" });
       showToast("Player added", "success");
     } catch (err) {

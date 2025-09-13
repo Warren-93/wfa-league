@@ -22,7 +22,7 @@ export default function FixturesPage() {
       <h1 className="text-2xl font-bold mb-4">Fixtures</h1>
       {fixtures.length === 0 ? <p>No fixtures available.</p> : (
         <div className="grid gap-3">
-          {fixtures.map((m) => <MatchCard key={m.id} match={m} />)}
+          {fixtures.map((f) => <MatchCard key={f.id} fixture={f} />)}
         </div>
       )}
     </div>
