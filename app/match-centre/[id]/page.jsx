@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { getFixtures } from "@/lib/api/services/fixtures";
 import { useLiveMatch } from "@/hooks/useLiveMatch";
 
-export default function MatchCentre({ params }) {
+export default async function MatchCentre({ params }) {
   const fixtures = getFixtures();
   const match = useMemo(() => fixtures.find(f => f.id === params.id), [fixtures, params.id]);
   const { events, score } = useLiveMatch(match);
